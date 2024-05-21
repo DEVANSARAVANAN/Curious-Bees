@@ -202,7 +202,7 @@ function Register() {
 
     try {
       // Add item to Firebase collection with UID as document ID
-      await firestore.collection("register").doc(currentUser.uid).set({
+      await firestore.collection("profile").doc(currentUser.uid).set({
         first_name: firstName,
         last_name: lastName,
         department: department,
